@@ -1,27 +1,26 @@
-#room_1 {
+#room_2 {
     position: relative;
     z-index: 0;
 }
 
-#door_1 {
+#hole {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     background-color: RGB(0,0,0,0);
-    height: 70px;
-    width: 32px;
-    top: 80px;
-    left: 295px; 
-    cursor: pointer;  
+    height: 55px;
+    width: 40px;
+    top: 60px;
+    left: 160px;
 }
 
-.arrow_box {
-    z-index: 3;
+#arrow_box2 {
+    z-index: 4;
     display: none;
     position: absolute;
-    width: 80px;
+    width: 40px;
     padding: 6px;
-    top: 80px;
-    left: 265px; 
+    top: 120px;
+    left: 155px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -30,12 +29,18 @@
     font-size: 12px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    border: 1px solid black
+    border: 1px solid black;
   }
-  
-  
- div:hover + a.arrow_box {
+
+  div:hover + p#arrow_box2 {
     display: block;
   }
 
-
+#black_hole {
+    z-index: 3;
+    position: absolute;
+    width: 30px;
+    top: 75px;
+    left: 165px;
+    opacity: 50%;
+}
