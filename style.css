@@ -1,3 +1,51 @@
-body {
-    background: blue;
+#room_1 {
+    position: relative;
+}
+
+#door_1 {
+    position: absolute;
+    z-index: 2;
+    background-color: RGB(0,0,0,0);
+    height: 70px;
+    width: 32px;
+    top: 80px;
+    left: 295px; 
+    cursor: pointer;  
+}
+
+.arrow_box {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    width: 80px;
+    padding: 6px;
+    top: 100px;
+    left: 265px; 
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+  }
+  
+  .arrow_box:after {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+    border: solid transparent;
+    border-color: rgba(51, 51, 51, 0);
+    border-bottom-color: #fff;
+    border-width: 10px;
+    pointer-events: none;
+    content: ' ';
+  }
+  
+ div:hover + p.arrow_box {
+    display: block;
   }
